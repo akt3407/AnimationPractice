@@ -1,0 +1,45 @@
+{
+  "name": "animation-practice",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.29.3",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev:top": "pnpm --filter top dev",
+    "dev:Practice01": "pnpm --filter practice01 dev",
+    "dev:Practice02": "pnpm --filter practice02 dev",
+    "dev:Practice03": "pnpm --filter practice03 dev",
+    "dev:Practice04": "pnpm --filter practice04 dev",
+    "dev:Practice05": "pnpm --filter practice05 dev",
+    "build:top": "pnpm --filter top build",
+    "build:Practice01": "pnpm --filter practice01 build",
+    "build:Practice02": "pnpm --filter practice02 build",
+    "build:Practice03": "pnpm --filter practice03 build",
+    "build:Practice04": "pnpm --filter practice04 build",
+    "build:Practice05": "pnpm --filter practice05 build",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r --if-present lint",
+    "format": "prettier . --write",
+    "prepare": "husky"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "3.8.3",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "0.8.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,astro,mjs,cjs,json,md,css,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

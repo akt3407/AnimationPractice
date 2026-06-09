@@ -1,5 +1,5 @@
 {
-  "name": "astro-template",
+  "name": "top",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -14,23 +14,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
-    "format:check": "prettier . --check",
-    "prepare": "husky"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
-  },
-  "lint-staged": {
-    "*.{js,ts,astro,mjs,cjs}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md,css,html,yml,yaml}": [
-      "prettier --write"
-    ]
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
