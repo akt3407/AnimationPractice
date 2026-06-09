@@ -1,0 +1,33 @@
+---
+import '@styles/global.css';
+import Header from '@layout/Header.astro';
+import Footer from '@layout/Footer.astro';
+import type { NavItem } from '~types/site';
+
+interface Props {
+  title: string;
+  description?: string;
+  nav?: NavItem[];
+}
+
+const { title, description, nav } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    {description && <meta name="description" content={description} />}
+    <title>{title}</title>
+  </head>
+  <body class="flex min-h-screen flex-col bg-white text-gray-900 antialiased">
+    <Header nav={nav} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
