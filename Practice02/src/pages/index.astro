@@ -1,28 +1,8 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Button from '@ui/Button.astro';
-import type { NavItem } from '~types/site';
-
-const nav: NavItem[] = [
-  { label: 'Docs', href: 'https://docs.astro.build' },
-  { label: 'GitHub', href: 'https://github.com/withastro/astro' },
-];
 ---
 
-<Layout title="Astro Template" description="汎用 Astro スターターテンプレート" nav={nav}>
-  <section class="mx-auto max-w-3xl p-8">
-    <h1 class="text-4xl font-bold tracking-tight">Astro Template</h1>
-    <p class="mt-2 text-gray-600">
-      Tailwind v4 · TypeScript strict · ESLint · Prettier · sitemap · pnpm
-    </p>
-    <ul class="mt-6 list-disc space-y-1 pl-6 text-sm text-gray-700">
-      <li><code>pnpm dev</code> — 開発サーバ起動</li>
-      <li><code>pnpm build</code> — 型チェック + ビルド</li>
-      <li><code>pnpm lint</code> / <code>pnpm format</code></li>
-    </ul>
-    <div class="mt-8 flex gap-3">
-      <Button href="https://docs.astro.build">Docs を読む</Button>
-      <Button href="/about" variant="secondary">Secondary</Button>
-    </div>
-  </section>
-</Layout>
+<Layout
+  title="AnimationPractice02"
+  description="アニメーションの練習のためのプロジェクトです。"
+></Layout>

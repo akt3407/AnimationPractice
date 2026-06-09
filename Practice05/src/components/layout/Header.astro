@@ -1,26 +1,7 @@
----
-import type { NavItem } from '~types/site';
-
-interface Props {
-  nav?: NavItem[];
-}
-
-const { nav = [] } = Astro.props;
----
-
-<header class="border-b border-gray-200">
-  <div class="mx-auto flex max-w-3xl items-center justify-between p-4">
-    <a href="/" class="font-bold tracking-tight">Astro Template</a>
-    {
-      nav.length > 0 && (
-        <nav class="flex gap-4 text-sm text-gray-600">
-          {nav.map((item) => (
-            <a href={item.href} class="hover:text-gray-900">
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      )
-    }
+<header>
+  <div class="fixed top-4 left-1/2 -translate-x-1/2 text-center p-4 mx-auto bg-white border border-[#4B81FF] rounded-[4px]">
+    <p class="text-base leading-none font-[family-name:var(--font-work-sans)]">
+      Animation Practice 05
+    </p>
   </div>
 </header>
