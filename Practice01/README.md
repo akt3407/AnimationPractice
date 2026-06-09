@@ -1,46 +1,23 @@
-# Astro Starter Kit: Basics
+# Practice01 - GSAP SplitText
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+## 概要
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+GSAPのSplitTextプラグインを使ったテキストアニメーションの練習。
 
-## 🚀 Project Structure
+## デモ
 
-Inside of your Astro project, you'll see the following folders and files:
+🔗 [Practice01](https://animation-practice01-ochre.vercel.app/)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## 使用技術
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- Astro
+- GSAP / SplitText
+- TypeScript
 
-## 🧞 Commands
+## 学んだこと
 
-All commands are run from the root of the project, from a terminal:
+SplitTextの使い方
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## 参考
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Credit:[OkadaTomoya様](https://tech-33-gsap-split-text-demo.vercel.app/)
