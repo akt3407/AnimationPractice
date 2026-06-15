@@ -3,7 +3,7 @@
 /* デザイントークン */
 @theme {
   /* スペーシング（1単位 = 1px） */
-  --spacing: 0.1rem;
+  --spacing: 0.0625rem;
 
   /* フォント */
   --font-jp: ;

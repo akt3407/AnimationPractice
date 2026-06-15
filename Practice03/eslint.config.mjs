@@ -14,6 +14,7 @@ export default [
       parserOptions: {
         parser: tseslint.parser,
         extraFileExtensions: ['.astro'],
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },

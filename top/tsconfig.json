@@ -12,7 +12,7 @@
       "@layout/*": ["src/components/layout/*"],
       "@lib/*": ["src/lib/*"],
       "@styles/*": ["src/styles/*"],
-      "@assets/*": ["src/assets/*"],
+      "@images/*": ["src/images/*"],
       "~types/*": ["src/types/*"]
     }
   }
