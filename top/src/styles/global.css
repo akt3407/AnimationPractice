@@ -6,36 +6,39 @@
   --spacing: 0.0625rem;
 
   /* フォント */
-  --font-jp: ;
-  --font-en: ;
+  --font-mono: 'TRS Million', sans-serif;
+  --font-sans: 'Work Sans Variable', sans-serif;
 
   /* font-size（基準幅: 1440px） */
   --text-*: initial;
 
-  --text-: ;
+  --text-32: clamp(2rem, 0.944rem + 4.51vw, 5rem);
+  --text-16: 1rem;
+  --text-12: 0.75rem;
+  --text-10: clamp(0.625rem, 0.493rem + 0.56vw, 1rem);
 
   /* 色 */
   --color-*: initial;
 
-  --color-white: ;
-  --color-black: ;
+  --color-white: #fff;
+  --color-gray: #8d9dae;
 
-  --color-accent: ;
+  --color-accent: #53c3f1;
 }
 
 /* ベース設定値 */
 :root {
   --base-width: 390;
-  --base-side-margin: 30; /* プロジェクトごとに書き換え */
-  --base-gutter: 14; /* プロジェクトごとに書き換え */
+  --base-side-margin: 16; /* プロジェクトごとに書き換え */
+  --base-gutter: 16; /* プロジェクトごとに書き換え */
   --base-grid-number: 4; /* プロジェクトごとに書き換え */
 }
 
 @media (min-width: 768px) {
   :root {
     --base-width: 1440;
-    --base-side-margin: 60; /* プロジェクトごとに書き換え */
-    --base-gutter: 24; /* プロジェクトごとに書き換え */
+    --base-side-margin: 80; /* プロジェクトごとに書き換え */
+    --base-gutter: 40; /* プロジェクトごとに書き換え */
     --base-grid-number: 12; /* プロジェクトごとに書き換え */
   }
 }
@@ -98,12 +101,12 @@
   }
 
   body {
-    font-family: var(--font-jp);
+    font-family: var(--font-sans);
     line-height: 1; /* プロジェクトごとに書き換え */
-    color: var(--color-black); /* プロジェクトごとに書き換え */
+    color: var(--color-gray); /* プロジェクトごとに書き換え */
     font-feature-settings: 'palt';
     font-weight: 400;
-    background: var(--color-); /* プロジェクトごとに書き換え */
+    background: var(--color-white); /* プロジェクトごとに書き換え */
   }
 
   img,
@@ -129,7 +132,7 @@
 }
 
 @layer utilities {
-  .space-x {
+  .space-side-x {
     padding-inline: var(--space-side);
   }
   .grid-pc {

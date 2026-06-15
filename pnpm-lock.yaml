@@ -245,6 +245,9 @@ importers:
       "@astrojs/sitemap":
         specifier: ^3.7.2
         version: 3.7.3
+      "@fontsource-variable/work-sans":
+        specifier: ^5.2.8
+        version: 5.2.8
       "@tailwindcss/vite":
         specifier: ^4.3.0
         version: 4.3.0(vite@7.3.5(@types/node@24.13.1)(jiti@2.7.0)(lightningcss@1.32.0)(yaml@2.9.0))
@@ -1027,6 +1030,12 @@ packages:
         integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==,
       }
     engines: { node: ^20.19.0 || ^22.13.0 || >=24 }
+
+  "@fontsource-variable/work-sans@5.2.8":
+    resolution:
+      {
+        integrity: sha512-8uWtTt0/B5NxGie9xUVD5y5Ch4Q+Hy7kFYKtUpwYbzSAgJEoaMxT8rMnfnK7zfAYSLC8GnGO1/tXrFtKIYYQVQ==,
+      }
 
   "@humanfs/core@0.19.2":
     resolution:
@@ -5585,6 +5594,8 @@ snapshots:
     dependencies:
       "@eslint/core": 1.2.1
       levn: 0.4.1
+
+  "@fontsource-variable/work-sans@5.2.8": {}
 
   "@humanfs/core@0.19.2":
     dependencies:
