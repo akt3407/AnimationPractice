@@ -21,7 +21,16 @@ const project = await client.getListDetail({
 <Layout title={project.title} description={project.title}>
   <div class="mx-auto px-16 md:px-120">
     <h1 class="text-28 md:text-32b mt-60 md:mt-120">{project.title}</h1>
-    <p class="text-14 mt-24">#{project.tags.join(' #')}</p>
+    <div class="itesm-end mt-24 flex justify-between">
+      <p class="text-14">#{project.tags.join(' #')}</p>
+      <div class="items-ceter flex justify-end gap-8">
+        <p>DemoURL:</p>
+        <a
+          class="text-14 hover:text-accent transition-colors duration-300"
+          href="https://animation-practice01-ochre.vercel.app/">{project.url}</a
+        >
+      </div>
+    </div>
     {
       project.video_thumbnail ? (
         <video class="mt-40 h-600" src={project.video_thumbnail} autoplay muted loop playsinline />
