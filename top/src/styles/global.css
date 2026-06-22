@@ -12,16 +12,19 @@
   /* font-size（基準幅: 1440px） */
   --text-*: initial;
 
-  --text-32: clamp(2rem, 0.944rem + 4.51vw, 5rem);
-  --text-16: 1rem;
+  --text-10: 0.625rem;
   --text-12: 0.75rem;
-  --text-10: clamp(0.625rem, 0.493rem + 0.56vw, 1rem);
+  --text-16: 1rem;
+  --text-32: clamp(2rem, 0.944rem + 4.51vw, 5rem);
+  --text-32b: 2rem;
 
   /* 色 */
   --color-*: initial;
 
   --color-white: #fff;
   --color-gray: #8d9dae;
+  --color-black: #2b2b2b;
+  --color-cinnamon: #c77c38;
 
   --color-accent: #53c3f1;
 }

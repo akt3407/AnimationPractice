@@ -1,0 +1,40 @@
+---
+import { client } from '@lib/microcms';
+
+const { contents } = await client.getList({
+  endpoint: 'project',
+});
+---
+
+{
+  contents.map((project) => (
+    <div>
+      <a class="inline-block" href={`${project.id}`}>
+        {project.video_thumbnail ? (
+          <video
+            class="h-290 w-290 object-cover"
+            src={project.video_thumbnail}
+            width={290}
+            height={290}
+            autoplay
+            muted
+            loop
+            playsinline
+          />
+        ) : (
+          <img
+            class="w-290"
+            src={project.image_thumbnail.url}
+            alt={project.title}
+            width={290}
+            height={290}
+          />
+        )}
+        <div class="px-16 py-8">
+          <span class="text-10 font-light">#{project.tags.join(' #')}</span>
+          <h2 class="text-16 lading-[1.5] mt-8">{project.title}</h2>
+        </div>
+      </a>
+    </div>
+  ))
+}
