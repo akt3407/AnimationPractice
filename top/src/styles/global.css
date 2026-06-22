@@ -14,7 +14,9 @@
 
   --text-10: 0.625rem;
   --text-12: 0.75rem;
+  --text-14: 0.875rem;
   --text-16: 1rem;
+  --text-28: 1.75rem;
   --text-32: clamp(2rem, 0.944rem + 4.51vw, 5rem);
   --text-32b: 2rem;
 

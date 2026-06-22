@@ -9,10 +9,13 @@ const { contents } = await client.getList({
 {
   contents.map((project) => (
     <div>
-      <a class="inline-block" href={`${project.id}`}>
+      <a
+        class="hover:text-accent inline-block transition-colors duration-300"
+        href={`${project.id}`}
+      >
         {project.video_thumbnail ? (
           <video
-            class="h-290 w-290 object-cover"
+            class="h-290 object-cover md:w-290"
             src={project.video_thumbnail}
             width={290}
             height={290}

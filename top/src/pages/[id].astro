@@ -19,12 +19,12 @@ const project = await client.getListDetail({
 ---
 
 <Layout title={project.title} description={project.title}>
-  <div class="mx-auto px-120">
-    <h1 class="text-32b mt-120">{project.title}</h1>
-    <p class="mt-24">#{project.tags.join(' #')}</p>
+  <div class="mx-auto px-16 md:px-120">
+    <h1 class="text-28 md:text-32b mt-60 md:mt-120">{project.title}</h1>
+    <p class="text-14 mt-24">#{project.tags.join(' #')}</p>
     {
       project.video_thumbnail ? (
-        <video class="mt-40" src={project.video_thumbnail} autoplay muted loop playsinline />
+        <video class="mt-40 h-600" src={project.video_thumbnail} autoplay muted loop playsinline />
       ) : (
         <img class="mt-40" src={project.image_thumbnail.url} alt={project.title} />
       )
