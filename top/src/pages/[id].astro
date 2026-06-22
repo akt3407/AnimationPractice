@@ -25,9 +25,8 @@ const project = await client.getListDetail({
       <p class="text-14">#{project.tags.join(' #')}</p>
       <div class="items-ceter flex justify-end gap-8">
         <p>DemoURL:</p>
-        <a
-          class="text-14 hover:text-accent transition-colors duration-300"
-          href="https://animation-practice01-ochre.vercel.app/">{project.url}</a
+        <a class="text-14 hover:text-accent transition-colors duration-300" href={project.url}
+          >{project.url}</a
         >
       </div>
     </div>
