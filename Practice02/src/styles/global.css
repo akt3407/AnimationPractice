@@ -12,15 +12,13 @@
   /* font-size（基準幅: 1440px） */
   --text-*: initial;
 
-  --text-: ;
+  --text-80: 10rem;
+  --text-12: 0.75rem;
 
   /* 色 */
   --color-*: initial;
 
-  --color-white: ;
-  --color-black: ;
-
-  --color-accent: ;
+  --color-blue: #024fa3;
 }
 
 /* ベース設定値 */

@@ -1,8 +1,11 @@
 ---
+import MeltText from '@/components/ui/MeltText.astro';
 import Layout from '@layouts/Layout.astro';
 ---
 
-<Layout
-  title="AnimationPractice02"
-  description="アニメーションの練習のためのプロジェクトです。"
-></Layout>
+<Layout title="AnimationPractice02" description="アニメーションの練習のためのプロジェクトです。">
+  <div class="fixed inset-0 flex flex-col items-center justify-center">
+    <MeltText text="DEEP SLEEP" />
+    <p class="text-12 mt-40">※リロードしないとテキストは戻りません。</p>
+  </div>
+</Layout>
