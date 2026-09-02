@@ -2,40 +2,43 @@
   "name": "animation-practice",
   "private": true,
   "type": "module",
+  "version": "0.0.1",
   "packageManager": "pnpm@10.29.3",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev:top": "pnpm --filter top dev",
-    "dev:Practice01": "pnpm --filter practice01 dev",
-    "dev:Practice02": "pnpm --filter practice02 dev",
-    "dev:Practice03": "pnpm --filter practice03 dev",
-    "dev:Practice04": "pnpm --filter practice04 dev",
-    "dev:Practice05": "pnpm --filter practice05 dev",
-    "build:top": "pnpm --filter top build",
-    "build:Practice01": "pnpm --filter practice01 build",
-    "build:Practice02": "pnpm --filter practice02 build",
-    "build:Practice03": "pnpm --filter practice03 build",
-    "build:Practice04": "pnpm --filter practice04 build",
-    "build:Practice05": "pnpm --filter practice05 build",
-    "build": "pnpm -r build",
-    "lint": "pnpm -r --if-present lint",
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
+    "format:check": "prettier . --check",
     "prepare": "husky"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "sharp"
-    ]
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "@fontsource-variable/work-sans": "^5.2.8",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.1",
+    "microcms-js-sdk": "^3.4.0",
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-astro": "^1.7.0",
+    "globals": "^17.6.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.4.0",
     "prettier": "3.8.3",
     "prettier-plugin-astro": "0.14.1",
-    "prettier-plugin-tailwindcss": "0.8.0"
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3"
   },
   "lint-staged": {
     "*.{js,ts,astro,mjs,cjs,json,md,css,html,yml,yaml}": [

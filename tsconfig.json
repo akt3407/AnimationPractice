@@ -1,11 +1,20 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./top" },
-    { "path": "./Practice01" },
-    { "path": "./Practice02" },
-    { "path": "./Practice03" },
-    { "path": "./Practice04" },
-    { "path": "./Practice05" }
-  ]
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@ui/*": ["src/components/ui/*"],
+      "@section/*": ["src/section/*"],
+      "@layout/*": ["src/components/layout/*"],
+      "@lib/*": ["src/lib/*"],
+      "@styles/*": ["src/styles/*"],
+      "@images/*": ["src/images/*"],
+      "~types/*": ["src/types/*"]
+    }
+  }
 }
